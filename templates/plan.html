@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .box {
+    border: 2px solid blue;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .box .date, .box .description, .box .budget, .box .location {
+    margin-bottom: 10px;
+  }
+
+  .id {
+
+    display: none;
+  }
+
+  .box button {
+    background-color: blue; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .box button:hover {
+    background-color: darkblue;
+  }
+</style>
+</head>
+<header class="header-style nav-on-top bg-white">
+    <div class="main-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg nav-secondary nav-primary-hover nav-line-active">
+                        <a class="navbar-brand" href="/"><img class="nav-logo" src="static/images/logo/logo1.png" alt="Image not found !"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon flaticon-menu flat-small text-primary"></span>
+                          </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" style="font-size: large;" href="/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" style="font-size: large;" href="/newtrip">Create A Trip</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" style="font-size: large;" href="/jointrip">Join Trip</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" style="font-size: large;" href="/Login">login</a>
+                                </li>                                     
+                                <li class="nav-item"> 
+                                    <a class="nav-link" style="font-size: large;" href="/dashboard">Dashboard</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+
+<div class="container">
+  <div class="box">
+    <form action="/plandetails" method="post">
+        <div class="id">the id will be invisible</div>
+        <div class="date">Date: [Your Date Here]</div>
+        <div class="description">Description: [Short Description Here]</div>
+        <div class="budget">Budget Required: [Budget Here]</div>
+        <div class="location">Location: [Location Here]</div>
+        <button type="submit">More Details</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
