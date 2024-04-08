@@ -1,0 +1,151 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PlaniT | plan your trip with your friends</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-select.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='webfonts/flaticon/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/layerslider.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/colors/color-4.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/loader.css') }}">
+</head>
+<header class="header-style nav-on-top bg-white">
+    <div class="main-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg nav-secondary nav-primary-hover nav-line-active">
+                        
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon flaticon-menu flat-small text-primary"></span>
+                          </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" style="font-size: large;" href="/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" style="font-size: large;" href="/newtrip">Create A Trip</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" style="font-size: large;" href="/jointrip">Join Trip</a>
+                                </li>                               
+                                <li class="nav-item"> 
+                                    <a class="nav-link" style="font-size: large;" href="/dashboard">Dashboard</a>
+                                </li>
+                                <li class="nav-item"> 
+                                    <a class="nav-link" style="font-size: large;" href="/logout">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<br>
+<br>
+<br>
+
+<div class="full-row px-40 py-30 xs-p-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h3 class="my-3">Set up your profile for {{ gc_name }}</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col mb-30">
+                <form class="form-boder" action="/profile/{{inviteid}}" method="POST" enctype="multipart/form-data">
+                    <div class="border rounded bg-white p-30">
+                        
+                    
+                            <div class="row">
+                                
+                                <div class="col-md-4 mb-20">
+                                    <label class="mb-2 font-fifteen font-500">Name</label>
+                                    <input class="form-control" id="name" name="name" type="text" required>
+                                </div>
+
+                                <div class="col-md-6 mb-20">
+                                    <label class="mb-2 font-fifteen font-500">Budget Levels</label>
+                                        <select id="budget" name="budget" multiple>
+                                            <option value="1">Budget</option>
+                                            <option value="2">Normal</option>
+                                            <option value="3">Expensive</option>
+                                            <option value="4">Luxury</option>
+                                        </select>
+                                </div>
+                                <div class="col-md-4 mb-20">
+                                    <label class="mb-2 font-fifteen font-500">Restaurant Interest</label>
+                                    <input class="form-control" id="restaurantint" name="restaurantint" type="text" required>
+                                </div>
+                                <div class="col-md-4 mb-20">
+                                    <label class="mb-2 font-fifteen font-500">Activity Interest</label>
+                                    <input class="form-control" id="activitiesint" name="activitiesint" type="text" required>
+                                </div>
+                                                            
+                            </div>
+
+                            
+                                
+                            </div>
+
+                            <div class="col-md-12 mb-20">
+                                <button type="submit" name="submitbasic">Save Profile</button>
+                            </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/greensock.js"></script>
+    <script src="static/js/layerslider.transitions.js"></script>
+    <script src="static/js/layerslider.kreaturamedia.jquery.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/bootstrap-select.min.js"></script>
+    <script src="static/js/jquery.fancybox.min.js"></script>
+    <script src="static/js/owl.js"></script>
+    <script src="static/js/range/tmpl.js"></script>
+    <script src="static/js/range/jquery.dependClass.js"></script>
+    <script src="static/js/range/draggable.js"></script>
+    <script src="static/js/range/jquery.slider.js"></script>
+    <script src="static/js/wow.js"></script>
+    <script src="static/js/mixitup.min.js"></script>
+    <script src="static/js/paraxify.js"></script>
+    <script src="static/js/custom.js"></script>
+
+</body>
+
+</html>

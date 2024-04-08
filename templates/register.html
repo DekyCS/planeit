@@ -6,20 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="RezRealtor login">
-    <meta name="keywords" content="real estate, property, property search, agent, apartments, booking, business, idx, housing, real estate agency, rental">
-    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-    <link rel="canonical" href="https://rezrealtor.ca/login.html"/>
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="RezRealtor HomeLife Cimerman real estate agent" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="ARezRealtor real estate agent" />
-    <meta property="og:description" content="" />
-    <meta property="og:url" content="https://rezrealtor.ca/" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="article:modified_time" content="2023-11-29T11:25:00+00:00" />
-    <meta property="og:image" content="https://rezrealtor.ca/static/images/logo/logo1.png" />
-    <meta name="author" content="ariyaman | artopano">
+
     
     <title>Sign In</title>
     <!-- Favicon -->
@@ -63,7 +50,7 @@
                     <div class="row">
                         <div class="col">
                             <nav class="navbar navbar-expand-lg nav-secondary nav-primary-hover nav-line-active">
-                                <a class="navbar-brand" href="/"><img class="nav-logo" src="static/images/logo/logo1.png" alt="Image not found !"></a>
+                                
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon flaticon-menu flat-small text-primary"></span>
                                   </button>
@@ -73,17 +60,13 @@
                                             <a class="nav-link" style="font-size: large;" href="/">Home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" style="font-size: large;" href="/newtrip">Create A Trip</a>
+                                            <a class="nav-link" style="font-size: large;" href="/groupchat">Create/ Join GC</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" style="font-size: large;" href="/jointrip">Join Trip</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" style="font-size: large;" href="/Login">login</a>
-                                        </li>                                     
+                          
                                         <li class="nav-item"> 
                                             <a class="nav-link" style="font-size: large;" href="/dashboard">Dashboard</a>
                                         </li>
+                                        
                                     </ul>
                                 </div>
                             </nav>
@@ -102,11 +85,11 @@
                         <div class="bg-white xs-p-20 p-30 border rounded">
                             <div class="form-icon-left rounded form-boder">
                                 <h4 class="mb-4">User Register</h4>
-                                <form action="/" method="POST">
+                                <form action="/register" method="POST">
                                     <div class="row row-cols-1 g-3">
                                         <div class="col">
                                             <label class="mb-2">Email Address</label>
-                                            <input type="email" name="email" class="form-control bg-light" value="" required="">
+                                            <input type="email" name="name" class="form-control bg-light" value="" required="">
                                         </div>
                                         <div class="col">
                                             <label class="mb-2">Password</label>
@@ -114,7 +97,7 @@
                                         </div>
                                         <div class="col">
                                             <label class="mb-2">Re-Password</label>
-                                            <input type="password" name="password" class="form-control bg-light" value="" required="">
+                                            <input type="password" name="password2" class="form-control bg-light" value="" required="">
                                         </div>
                                         <div class="col">
                                             <button type="submit" class="btn btn-primary mb-3">Register</button>

@@ -63,7 +63,7 @@
                     <div class="row">
                         <div class="col">
                             <nav class="navbar navbar-expand-lg nav-secondary nav-primary-hover nav-line-active">
-                                <a class="navbar-brand" href="/"><img class="nav-logo" src="static/images/logo/logo1.png" alt="Image not found !"></a>
+                                
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon flaticon-menu flat-small text-primary"></span>
                                   </button>
@@ -73,17 +73,15 @@
                                             <a class="nav-link" style="font-size: large;" href="/">Home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" style="font-size: large;" href="/newtrip">Create A Trip</a>
+                                            <a class="nav-link" style="font-size: large;" href="/groupchat">Create/ Join GC</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" style="font-size: large;" href="/jointrip">Join Trip</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" style="font-size: large;" href="/Login">login</a>
-                                        </li>                                     
+                                        
+                                           
+                                                                       
                                         <li class="nav-item"> 
                                             <a class="nav-link" style="font-size: large;" href="/dashboard">Dashboard</a>
                                         </li>
+                                        
                                     </ul>
                                 </div>
                             </nav>
@@ -102,11 +100,11 @@
                         <div class="bg-white xs-p-20 p-30 border rounded">
                             <div class="form-icon-left rounded form-boder">
                                 <h4 class="mb-4">User Login</h4>
-                                <form action="/" method="POST">
+                                <form action="/login" method="POST">
                                     <div class="row row-cols-1 g-3">
                                         <div class="col">
                                             <label class="mb-2">Email Address</label>
-                                            <input type="email" name="email" class="form-control bg-light" value="" required="">
+                                            <input type="email" name="name" class="form-control bg-light" value="" required="">
                                         </div>
                                         <div class="col">
                                             <label class="mb-2">Password</label>

@@ -1,0 +1,4 @@
+            name = request.form["name"]
+            budget = request.form["budget"]
+            int_activity = request.form["activitiesint"]
+            int_restaurant = request.form["restaurantint"]
